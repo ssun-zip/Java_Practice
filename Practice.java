@@ -22,6 +22,7 @@ public class Practice {
 		nestedLoop();
 		averager(scan);
 		continueTest();
+		continueTest2();
 	}
 
 	// #1 switch문 이용예제

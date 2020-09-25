@@ -15,6 +15,7 @@ public class practice7 {
 		accessEX();
 		accountTest();
 		safeArrayTest();
+		MyCounter();
 		
 	}
 

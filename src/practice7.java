@@ -1,3 +1,8 @@
+// 2020.09.25
+// 연습예제들
+// class --> Account.java, Car.java, Math.java, MyCounter.java
+//           MyMath.java, SafeArray.java, Sample.java, Television.java
+
 import java.util.*;
 
 public class practice7 {

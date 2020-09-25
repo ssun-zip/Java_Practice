@@ -11,7 +11,7 @@ public class practice7 {
 		carTest();
 		myMath();
 		stringTest();
-		checkString();
+		checkString(scan);
 		accessEX();
 		accountTest();
 		safeArrayTest();
@@ -153,9 +153,8 @@ public class practice7 {
 	
 	//사용자가 문자열을 받아서 문자열이 "www"로 시작하는 지확인하고
 	//quit이라고 적으면 끝난다
-	public static void checkString() {
+	public static void checkString(Scanner scan) {
 		String str;
-		Scanner scan = new Scanner(System.in);
 		while(true) {
 			System.out.print("문자열을 입력하세요> ");
 			str = scan.next();

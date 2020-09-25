@@ -133,12 +133,14 @@ public class practice7 {
 		System.out.println(myCar.toString());
 	}
 	
+	// 정수와 소수로 된 숫자들의 square 구하기
 	public static void myMath() {
 		MyMath obj = new MyMath();
 		System.out.println(obj.square(10));
 		System.out.println(obj.square(3.14));
 	}
 	
+	//string을 이용한 결합, 교환, 부분추출, 대문자
 	public static void stringTest() {
 		String proverb = "A barking dog";
 		String s1, s2, s3,s4; //참조 변수로서 메소드에서 반환된 참조값을 받는다. 
@@ -174,7 +176,8 @@ public class practice7 {
 			}
 		}
 	}
-		
+	
+	// private로 Sample.java가 parameter을 지정해놓으면 에러가 뜨는 이유?
 	public static void accessEX() {
 		Sample s = new Sample();
 		s.a =10;
@@ -201,6 +204,7 @@ public class practice7 {
 		System.out.println("이름은 " + obj.getName() + " 통장 잔고는 " + obj.getBalance() + "입니다");
 	}
 	
+	// array 0-1-2 (length:3)
 	public static void safeArrayTest() {
 		SafeArray array = new SafeArray(3);
 		

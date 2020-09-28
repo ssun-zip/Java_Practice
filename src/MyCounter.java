@@ -1,7 +1,6 @@
-
 public class MyCounter {
-	int counter;
-	MyCounter(int value){
-		counter = value;
-	}
+     int counter;
+     MyCounter(int value){
+           counter  = value;
+     }
 }

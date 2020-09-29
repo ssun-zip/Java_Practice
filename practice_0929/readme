@@ -1,13 +1,14 @@
-
-BankTest	-- Bank
-Parent	== Child
-Shape	-- Circle
+Main() Class	    Sub Class
+-----------------------------------------------------
+BankTest		 Bank
+Parent			Child
+Shape		        Circle
 ConstructorEx3	
-Person	--Upcasting, Downcasting
-Test	--Base
+Person	 	  Upcasting, Downcasting
+Test			Base
 Shape	
 MyFrame	
-ManagerTest--	Manager, Employee
+ManagerTest    	Manager, Employee
 Overriding	
 Button1	
 	

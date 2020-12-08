@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!--  memberForm.html : 사용자가 처음 마주하게 될 화면 
+					    가입을 하기 위해 사용자의 정보를 입력한다.
+	   MemberServlet_2.java :  form에서 보내진 정보를 서블렛을 통해 MemberDAO 로 보내준다. 
+	   						 form에서 submit을 눌렀을때 데이터베이스에 담긴 member정보 화면 설정
+	   	MemberDAO_2 : 데이터베이스와 연결할수 있도록 세팅하여 정보를 불러오고 넣고 삭제하는 역할 수행
+	   	MemberVO_2 : 데이터베이스의 정보를 저장하는 클래스  -->
+<script type = "text/javascript">
+	function fn_sendMember() {
+	var frmMember = document.frmMember;
+	var id = frmMember.id.value;
+	var pwd = frmMember.pwd.value;	
+	var name = frmMember.name.value;	
+	var email = frmMember.email.value;	
+	if(id.length == 0 || id =="") {
+		alert("id 는 필수입니다");
+	} else if (pwd.length == 0 || pwd == "") {
+		alert("비밀번호 는 필수입니다");
+	
+	} else if (name.length == 0 || name == "") {
+		alert("name 는 필수입니다");
+	
+	} else if (email.length == 0 || email == "") {
+	alert("email 는 필수입니다");
+	 
+	} else {
+		// frmMember의 내용을 member2 서블렛을 통해 데이터베이스 저장 
+		frmMember.method = "post";
+		frmMember.action = "member2";
+		frmMember.submit();
+	}	
+}
+</script>
+</head>
+<body>
+	<form name = "frmMember">
+		<table>
+			<th> 회원 가입창 </th>
+			<tr>
+				<td> 아이디 </td>
+				<td><input type = "text" name = "id"></td>
+			</tr>
+			<tr>
+				<td> 비밀번호 </td>
+				<td><input type = "password" name = "pwd"></td>
+			</tr>
+			<tr>
+				<td> name </td>
+				<td><input type = "text" name = "name"></td>
+			</tr>
+			<tr>
+				<td> email </td>
+				<td><input type = "text" name = "email"></td>
+			</tr>			
+		</table>
+		<input type = "button" value = "가입하기" onclick = "fn_sendMember()">
+		<input type = "reset" value = "다시입력">
+		<input type = "hidden" name = "command" value = "addMember" />
+	</form>
+</body>
+</html>

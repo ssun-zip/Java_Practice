@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>로그인 창 </title>
+</head>
+<body>
+<!-- frmLogin 이라는 이름을 한글 encoding type으로
+	 loginservlet_a 로 post 로 보내어라 
+	 get - url뒤에 name=value형태로 전송 
+	 post - TCP/IP protocol 의 head 영역에 숨겨진 채 전송한다. get방식보다 느리지만 보안에 유리하다   -->
+  <form name="frmLogin" method="post" action="login1" encType="UTF-8">
+       아이디  :<input type="text" name="user_id"><br>
+       비밀번호:<input type="password" name="user_pw"><br>
+       <input type="submit" value="로그인">
+       <input type="reset" value="다시입력">
+  </form>
+</body>
+</html>
